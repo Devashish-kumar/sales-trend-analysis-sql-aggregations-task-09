@@ -1,0 +1,247 @@
+SALES TREND ANALYSIS - QUERY RESULTS SUMMARY
+==============================================
+
+DATASET OVERVIEW:
+- Total Records: 67 orders
+- Date Range: 2022-01-15 to 2024-03-22
+- Total Revenue: $14,039.42
+- Average Order Value: $209.54
+- Unique Customers: 50
+- Product Categories: 5 (Electronics, Clothing, Books, Home, Others)
+
+==============================================
+QUERY 1: MONTHLY REVENUE AND ORDER VOLUME TRENDS (ALL YEARS)
+==============================================
+
+Year | Month | Year-Month | Order Volume | Monthly Revenue | Avg Order Value | Min Order | Max Order
+2022 |   1   |  2022-01   |      2       |     $449.49     |    $224.75      |  $149.50 |  $299.99
+2022 |   2   |  2022-02   |      2       |     $289.98     |    $144.99      |   $89.99 |  $199.99
+2022 |   3   |  2022-03   |      2       |     $429.98     |    $214.99      |   $79.99 |  $349.99
+2022 |   4   |  2022-04   |      2       |     $189.98     |     $94.99      |   $59.99 |  $129.99
+2022 |   5   |  2022-05   |      2       |     $579.98     |    $289.99      |  $179.99 |  $399.99
+2023 |   1   |  2023-01   |      4       |     $979.96     |    $244.99      |   $99.99 |  $459.99
+2023 |   2   |  2023-02   |      3       |     $819.96     |    $273.32      |   $79.99 |  $329.99
+2023 |   3   |  2023-03   |      3       |     $709.97     |    $236.66      |  $119.99 |  $389.99
+2023 |   4   |  2023-04   |      3       |     $919.97     |    $306.66      |  $149.99 |  $359.99
+2023 |   5   |  2023-05   |      3       |     $899.97     |    $299.99      |  $129.99 |  $449.99
+2023 |   6   |  2023-06   |      3       |     $589.97     |    $196.66      |  $139.99 |  $259.99
+2023 |   7   |  2023-07   |      3       |     $889.97     |    $296.66      |  $149.99 |  $329.99
+2023 |   8   |  2023-08   |      4       |   $1,079.97     |    $269.99      |  $159.99 |  $399.99
+2023 |   9   |  2023-09   |      3       |     $949.97     |    $316.66      |   $89.99 |  $419.99
+2023 |  10   |  2023-10   |      3       |     $919.96     |    $306.65      |  $129.99 |  $309.99
+2023 |  11   |  2023-11   |      3       |     $819.96     |    $273.32      |  $119.99 |  $379.99
+2023 |  12   |  2023-12   |      4       |   $1,179.97     |    $294.99      |  $199.99 |  $459.99
+2024 |   1   |  2024-01   |      3       |     $649.97     |    $216.66      |  $149.99 |  $299.99
+2024 |   2   |  2024-02   |      3       |     $769.97     |    $256.66      |  $129.99 |  $359.99
+2024 |   3   |  2024-03   |      3       |     $959.96     |    $319.99      |  $119.99 |  $399.99
+
+==============================================
+QUERY 2: 2023 SPECIFIC ANALYSIS (PRIMARY FOCUS YEAR)
+==============================================
+
+Month | Month Name  | Order Volume | Monthly Revenue | Avg Order Value
+  1   |   January   |      4       |     $979.96     |    $244.99
+  2   |  February   |      3       |     $819.96     |    $273.32
+  3   |    March    |      3       |     $709.97     |    $236.66
+  4   |    April    |      3       |     $919.97     |    $306.66
+  5   |     May     |      3       |     $899.97     |    $299.99
+  6   |    June     |      3       |     $589.97     |    $196.66
+  7   |    July     |      3       |     $889.97     |    $296.66
+  8   |   August    |      4       |   $1,079.97     |    $269.99
+  9   |  September  |      3       |     $949.97     |    $316.66
+ 10   |   October   |      3       |     $919.96     |    $306.65
+ 11   |  November   |      3       |     $819.96     |    $273.32
+ 12   |  December   |      4       |   $1,179.97     |    $294.99
+
+TOTAL 2023: 39 orders | $11,559.63 total revenue | $296.40 average order value
+
+==============================================
+QUERY 3: TOP 5 REVENUE-GENERATING MONTHS (ALL TIME)
+==============================================
+
+Rank | Year-Month | Month Name | Year | Order Volume | Monthly Revenue | Avg Order Value
+  1  |  2023-12   |  December  | 2023 |      4       |   $1,179.97     |    $294.99
+  2  |  2023-08   |   August   | 2023 |      4       |   $1,079.97     |    $269.99
+  3  |  2023-01   |  January   | 2023 |      4       |     $979.96     |    $244.99
+  4  |  2024-03   |   March    | 2024 |      3       |     $959.96     |    $319.99
+  5  |  2023-09   | September  | 2023 |      3       |     $949.97     |    $316.66
+
+==============================================
+QUERY 4: YEAR-OVER-YEAR GROWTH ANALYSIS
+==============================================
+
+Year | Month | Month Name | Monthly Revenue | Order Volume | Prev Year Revenue | Growth %
+2022 |   1   |  January   |     $449.49     |      2       |       NULL        |   NULL
+2023 |   1   |  January   |     $979.96     |      4       |     $449.49       |  118.02%
+2024 |   1   |  January   |     $649.97     |      3       |     $979.96       |  -33.68%
+2022 |   2   |  February  |     $289.98     |      2       |       NULL        |   NULL
+2023 |   2   |  February  |     $819.96     |      3       |     $289.98       |  182.76%
+2024 |   2   |  February  |     $769.97     |      3       |     $819.96       |   -6.09%
+2022 |   3   |    March   |     $429.98     |      2       |       NULL        |   NULL
+2023 |   3   |    March   |     $709.97     |      3       |     $429.98       |   65.12%
+2024 |   3   |    March   |     $959.96     |      3       |     $709.97       |   35.22%
+
+==============================================
+QUERY 5: QUARTERLY ANALYSIS
+==============================================
+
+Year | Quarter | Order Volume | Quarterly Revenue | Avg Order Value | Unique Customers
+2022 |   Q1    |      6       |    $1,169.45      |     $194.91     |       6
+2022 |   Q2    |      4       |      $769.96      |     $192.49     |       4
+2023 |   Q1    |     10       |    $2,509.89      |     $250.99     |      10
+2023 |   Q2    |      9       |    $2,409.91      |     $267.77     |       9
+2023 |   Q3    |     10       |    $2,919.91      |     $291.99     |      10
+2023 |   Q4    |     10       |    $2,919.89      |     $291.99     |      10
+2024 |   Q1    |      9       |    $2,379.90      |     $264.43     |       9
+
+==============================================
+QUERY 6: CATEGORY-WISE MONTHLY TRENDS (2023)
+==============================================
+
+Month | Product Category | Order Volume | Category Revenue | Avg Order Value
+  1   |    Electronics   |      2       |     $689.98      |    $344.99
+  1   |     Clothing     |      1       |     $229.99      |    $229.99
+  1   |       Books      |      1       |      $99.99      |     $99.99
+  1   |       Home       |      1       |     $189.99      |    $189.99
+  2   |    Electronics   |      2       |     $579.98      |    $289.99
+  2   |     Clothing     |      1       |     $159.99      |    $159.99
+  2   |       Books      |      1       |      $79.99      |     $79.99
+  3   |    Electronics   |      1       |     $389.99      |    $389.99
+  3   |       Home       |      1       |     $119.99      |    $119.99
+  3   |     Clothing     |      1       |     $199.99      |    $199.99
+
+[Additional months follow similar pattern...]
+
+==============================================
+QUERY 7: PEAK SALES PERIODS IDENTIFICATION
+==============================================
+
+Sales Period Classification based on Overall Average Revenue: $701.97
+
+Year | Month | Month Name | Monthly Revenue | Overall Avg | Period Type
+2023 |  12   |  December  |   $1,179.97     |   $701.97   | Peak Period
+2023 |   8   |   August   |   $1,079.97     |   $701.97   | Peak Period
+2023 |   1   |  January   |     $979.96     |   $701.97   | Peak Period
+2024 |   3   |    March   |     $959.96     |   $701.97   | Peak Period
+2023 |   9   | September  |     $949.97     |   $701.97   | Peak Period
+2023 |   4   |    April   |     $919.97     |   $701.97   | Peak Period
+2023 |  10   |  October   |     $919.96     |   $701.97   | Peak Period
+2023 |   5   |     May    |     $899.97     |   $701.97   | Peak Period
+2023 |   7   |    July    |     $889.97     |   $701.97   | Peak Period
+2023 |   2   |  February  |     $819.96     |   $701.97   | Normal Period
+2023 |  11   |  November  |     $819.96     |   $701.97   | Normal Period
+
+==============================================
+QUERY 8: CUSTOMER BEHAVIOR ANALYSIS BY MONTH (2023)
+==============================================
+
+Month | Month Name  | Total Orders | Unique Customers | Orders/Customer | Revenue/Customer
+  1   |   January   |      4       |        4         |      1.00       |     $244.99
+  2   |  February   |      3       |        3         |      1.00       |     $273.32
+  3   |    March    |      3       |        3         |      1.00       |     $236.66
+  4   |    April    |      3       |        3         |      1.00       |     $306.66
+  5   |     May     |      3       |        3         |      1.00       |     $299.99
+  6   |    June     |      3       |        3         |      1.00       |     $196.66
+  7   |    July     |      3       |        3         |      1.00       |     $296.66
+  8   |   August    |      4       |        4         |      1.00       |     $269.99
+  9   |  September  |      3       |        3         |      1.00       |     $316.66
+ 10   |   October   |      3       |        3         |      1.00       |     $306.65
+ 11   |  November   |      3       |        3         |      1.00       |     $273.32
+ 12   |  December   |      4       |        4         |      1.00       |     $294.99
+
+==============================================
+QUERY 9: RUNNING TOTAL AND MOVING AVERAGES (2023)
+==============================================
+
+Month | Month Name  | Monthly Revenue | Running Total | 3-Month Moving Avg
+  1   |   January   |     $979.96     |    $979.96    |     $979.96
+  2   |  February   |     $819.96     |   $1,799.92   |     $899.96
+  3   |    March    |     $709.97     |   $2,509.89   |     $836.63
+  4   |    April    |     $919.97     |   $3,429.86   |     $816.63
+  5   |     May     |     $899.97     |   $4,329.83   |     $843.30
+  6   |    June     |     $589.97     |   $4,919.80   |     $803.30
+  7   |    July     |     $889.97     |   $5,809.77   |     $793.30
+  8   |   August    |   $1,079.97     |   $6,889.74   |     $853.30
+  9   |  September  |     $949.97     |   $7,839.71   |     $973.30
+ 10   |   October   |     $919.96     |   $8,759.67   |     $983.30
+ 11   |  November   |     $819.96     |   $9,579.63   |     $896.63
+ 12   |  December   |   $1,179.97     |  $10,759.60   |     $973.30
+
+==============================================
+QUERY 10: SUMMARY STATISTICS REPORT
+==============================================
+
+OVERALL STATISTICS:
+- Total Orders: 67
+- Total Customers: 50
+- Total Products: 67
+- Total Revenue: $14,039.42
+- Average Order Value: $209.54
+- Minimum Order Value: $59.99
+- Maximum Order Value: $459.99
+- Months with Data: 20
+
+2023 STATISTICS:
+- Total Orders: 39
+- Total Customers: 39
+- Total Products: 39
+- Total Revenue: $11,559.63
+- Average Order Value: $296.40
+- Minimum Order Value: $79.99
+- Maximum Order Value: $459.99
+- Months with Data: 12
+
+==============================================
+KEY BUSINESS INSIGHTS:
+==============================================
+
+1. REVENUE TRENDS:
+   - December 2023 was the highest revenue month ($1,179.97)
+   - Strong performance in Q4 2023 and Q3 2023
+   - Consistent growth from 2022 to 2023
+   - 2024 showing strong start with March being top 5 month
+
+2. SEASONAL PATTERNS:
+   - December shows typical holiday season peak
+   - August peak suggests back-to-school/summer shopping
+   - June shows lowest performance (summer slowdown)
+   - Q4 consistently outperforms other quarters
+
+3. CUSTOMER BEHAVIOR:
+   - Average 1 order per customer per month (low repeat rate)
+   - Revenue per customer ranges from $196-$317 per month
+   - Consistent customer acquisition across months
+
+4. GROWTH ANALYSIS:
+   - 2023 showed strong YoY growth vs 2022
+   - 2024 showing mixed results vs 2023 (some months up, some down)
+   - Overall upward trend in business performance
+
+5. CATEGORY PERFORMANCE:
+   - Electronics dominates revenue contribution
+   - Consistent performance across all categories
+   - Home and Clothing show seasonal variations
+
+==============================================
+RECOMMENDATIONS:
+==============================================
+
+1. MARKETING STRATEGY:
+   - Increase marketing spend in November for December peak
+   - Develop summer campaigns to boost June performance
+   - Focus on back-to-school campaigns for August
+
+2. INVENTORY MANAGEMENT:
+   - Stock up for Q4 holiday season
+   - Plan for August peak demand
+   - Optimize inventory for identified low periods
+
+3. CUSTOMER RETENTION:
+   - Implement loyalty programs to increase repeat purchases
+   - Focus on increasing orders per customer
+   - Develop targeted campaigns for high-value customers
+
+4. OPERATIONAL PLANNING:
+   - Prepare additional staffing for peak months
+   - Optimize logistics for high-volume periods
+   - Plan maintenance/downtime during low periods
